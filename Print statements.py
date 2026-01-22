@@ -34,3 +34,12 @@ name = input("enter your name: ")
 
 print("\nHello", name, "\nWelcome to codingal")
 
+
+
+import keyword
+
+#print all the keywords in the  python library
+
+print("\nPython keywords are....\n")
+print(keyword.kwlist)
+
