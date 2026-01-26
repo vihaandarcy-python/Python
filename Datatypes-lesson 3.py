@@ -38,4 +38,4 @@ print("\n After type casting...")
 weight = int(weight)
 print(weight)
 print("datatype of weight is: ", type(weight))
-
+print("\n")
