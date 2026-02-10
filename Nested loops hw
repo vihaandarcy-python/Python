@@ -1,0 +1,6 @@
+#Take the input
+age = int(input("how old are you?: "))
+if age>=10 and age <= 20:
+    print("You are eligible to join within the age 10 and 20")
+elif age < 10 and age > 20:
+    print("You are not eligible to join, sorry!")
