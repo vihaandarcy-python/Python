@@ -1,0 +1,6 @@
+num = int(input("Enter the number of which you want to find the fower of: "))
+pw = int(input("Enter the power: "))
+g=1
+for n in range(pw):
+    g=g*num
+    print(g)
