@@ -18,7 +18,7 @@ for i in range(1, halfDiamRow+1):#loops for rows
     print()
 space = 1
 #loops for lower part
-for i in range(1, halfDiamRow+1):#loops for rows
+for i in range(1, halfDiamRow):#loops for rows
     for j in range(1, space+1): #loop for colums 
         print(end=" ")
     space = space+1
