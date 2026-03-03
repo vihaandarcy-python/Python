@@ -1,4 +1,4 @@
-import turtlea # importing library
+import turtle # importing library
 
 # Create screen
 my_wn = turtle.Screen()
