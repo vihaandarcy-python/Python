@@ -2,7 +2,7 @@ import turtle
 #inport the turtle library
 turtle.Screen().bgcolor("orange")
 turtle.Screen().setup(300,400)
-polygon = tutle.Turtle() #defined variable
+polygon = turtle.Turtle() #defined variable
 
 num_sides = 6 #variable
 side_length = 70 

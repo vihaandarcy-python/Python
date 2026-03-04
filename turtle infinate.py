@@ -17,3 +17,4 @@ while True:  # infinite loop
         size = size - 5   # decrease size slightly each side
     
     size = size + 1  # increase size after each square
+
