@@ -1,8 +1,8 @@
-test_dict = {'codingal' :2, 'is':2, 'best':2, 'for':2, 'coding':1}
+test_dict = {'codingal' :1, 'is':2, 'best':3, 'for':2, 'coding':1, ',':7, 'this':7, 'is':9, 'a':10, 'task':5, 'for':5, 'coding':6}
 
 print("The origional dictionary : " + str(test_dict))
 
-k = 2
+k = int(input("Enter your favourate number: "))
 
 res = 0
 for key in test_dict:
