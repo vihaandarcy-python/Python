@@ -7,4 +7,4 @@ print("List of even numbers:", even_list, "\n")
 
 fruits = ['apple', 'banana', 'mango', 'papaya', 'grape']
 Fruits = [x[0].upper() +x[1:] for x in fruits]
-print(('Fruits as proper nouns:', Fruits))
+print('Fruits as proper nouns:', Fruits)
