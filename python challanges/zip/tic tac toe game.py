@@ -20,7 +20,7 @@ def game():
 
     for i in range(10):
         printBoard(theBoard)
-        print("It's your turn," + turn + ".Move to which spot?")
+        print("It's your turn, " + turn + ".  Move to which spot?")
 
         move = input()
         if theBoard[move] == ' ':
