@@ -23,6 +23,7 @@ def game():
         print("It's your turn, " + turn + ".  Move to which spot?")
 
         move = input()
+        
         if theBoard[move] == ' ':
             theBoard[move] == turn
             count += 1
