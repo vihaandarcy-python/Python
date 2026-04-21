@@ -5,4 +5,4 @@ class vehicle:
 
 modelx = vehicle(240, 18)
 print("Model Max Speed:",modelx.max_speed)
-print("Model Max Speed:",modelx.mileage)
+print("Model Max mileage:",modelx.mileage)
