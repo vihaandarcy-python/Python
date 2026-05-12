@@ -2,8 +2,8 @@ import pygame
 
 def main():
     pygame.init()
-    screen_width, screen_hight = 500, 500
-    screen = pygame.display.set_mode((screen_width, screen_hight))
+    screen_width, screen_hieght = 500, 500
+    screen = pygame.display.set_mode((screen_width, screen_hieght))
     pygame.display.set_caption('Color changing sprite!')
 
     colors = {
@@ -16,7 +16,7 @@ def main():
     current_color = colors['white']
 
     x, y = 30, 30
-    sprite_width, sprite_hight = 60, 60
+    sprite_width, sprite_hieght = 100, 40
 
     clock = pygame.time.Clock()
 
@@ -27,24 +27,31 @@ def main():
             if event.type ==  pygame.QUIT:
                 done = True
 
-        pressed = pygame.key.get_presses()
+        pressed = pygame.key.get_pressed()
         if pressed[pygame.K_LEFT]: x -= 3
         if pressed[pygame.K_RIGHT]: x += 3
-        if pressed[pygame.K_UP]: x -= 3
-        if pressed[pygame.K_DOWN]: x += 3
+        if pressed[pygame.K_UP]: y -= 3
+        if pressed[pygame.K_DOWN]: y += 3
 
         x = min(max(0, x), screen_width-sprite_width)
-        y = min(max(0, y), screen_hight - sprite_hight)
+        y = min(max(0, y), screen_hieght - sprite_hieght)
 
         if x == 0: current_color = colors['red']
         elif x == screen_width - sprite_width: current_color = colors['yellow']
         elif y == 0: current_color = colors['green']
-        elif y == screen_hight- sprite_hight: current_color = colors['blue']
-        else:
-            current_color = colors['white']
+        elif y == screen_hieght- sprite_hieght: current_color = colors['blue']
+        else: current_color = colors['white']
+
+
 
         screen.fill((0, 0, 0))
-        pygame.draw.rect(screen, current_color,(x, y, ))
-    pygame.draw.rect(screen, (0, 125, 255), pygame.Rect(30, 30, 60, 60))
+        pygame.draw.rect(screen, current_color,(x, y, sprite_width, sprite_hieght))
+        pygame.display.flip()
+        clock.tick(90)
 
-    pygame.display.flip()
+    pygame.quit()
+
+if __name__ == "__main__":
+    main()
+
+    
