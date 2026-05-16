@@ -16,7 +16,7 @@ def main():
     current_color = colors['white']
 
     x, y = 30, 30
-    sprite_width, sprite_hieght = 100, 40
+    sprite_width, sprite_hieght = 100, 100
 
     clock = pygame.time.Clock()
 
