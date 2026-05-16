@@ -1,23 +1,31 @@
 import pygame
 pygame.init()
-white = (255, 255, 255)
+
+Grey = (58, 58, 58)
 
 clock = pygame.time.Clock()
 
 display_surface = pygame.display.set_mode((500, 500))
 
-pygame.display.set_caption('IMAGE')
+pygame.display.set_caption('My First Game Screen')
 
 image = pygame.image.load('image.png')
 
-DEFAULT_IMAGE_SIZE = (200, 200)
+DEFAULT_IMAGE_SIZE = (300, 210)
 
 image = pygame.transform.scale(image, DEFAULT_IMAGE_SIZE)
 
-DEFAULT_IMAGE_POSITION = (150, 150)
+x = 500/2-300//2
+
+y = 500/2-210//2
+
+print(f"x  {x} y {y}") 
+
+
+DEFAULT_IMAGE_POSITION = (x, y)
 
 while True:
-    display_surface.fill(white)
+    display_surface.fill(Grey)
     display_surface.blit(image, DEFAULT_IMAGE_POSITION)
 
     for event in pygame.event.get():
@@ -27,5 +35,5 @@ while True:
             quit()
 
 
-pygame.display.flip()
-clock.tick(30)
+    pygame.display.flip()
+    clock.tick(30)
