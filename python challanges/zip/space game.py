@@ -29,7 +29,7 @@ icon = pygame.image.load('ufo.png')
 pygame.display.set_icon(icon)
 
 #player
-playerImg = pygame.transform.scale(pygame.image.load('player.png'), (70, 80))
+playerImg = pygame.transform.scale(pygame.image.load('player.png'), (100, 120))
 playerX = PLAYER_START_X
 playerY = PLAYER_START_Y
 PlayerX_change = 0
@@ -118,7 +118,7 @@ while running:
     playerX = max(0, min(playerX, SCREEN_WIDTH - playerImg.get_width()))
 
     for i in range(num_of_enemies):
-        if enemyY[i] > 340:
+        if enemyY[i] > playerY - 40:
             for j in range(num_of_enemies):
                 enemyY[j] = 2000
             game_over_text()
