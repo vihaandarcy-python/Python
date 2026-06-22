@@ -126,7 +126,7 @@ while running:
 
         enemyX[i] += enemyX_change[i]
         if enemyX[i] <= 0 or enemyX[i] >= SCREEN_WIDTH - enemy_width:
-            enemyX_change[i] *= -1
+            enemyX_change[i] *= -1 
             enemyY[i] += enemyY_change[i]
         
         if isCollision(enemyX[i], enemyY[i], bulletX, bulletY):
