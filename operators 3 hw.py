@@ -4,7 +4,7 @@ if x==65:
     print("The ASCII Code 65 stands for Alphabet A")
 
 elif x==66:
-    print("The ASCII Code 65 stands for Alphabet B ")
+    print("The ASCII Code 66 stands for Alphabet B ")
 elif x==67:
     print("The ASCII Code 65 stands for Alphabet C")
 elif x==68:
