@@ -71,9 +71,12 @@ screen.fill(bg_color)
 
 exit = False
 clock = pygame.time.Clock()
+
 while not exit:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             exit = True
 
-        elif event.type == Sprite_Color_Change_Event
+        elif event.type == Sprite_Color_Change_Event:
+
+

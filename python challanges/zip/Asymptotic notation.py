@@ -12,12 +12,6 @@ print("Score at index 0 :", scores[0], "| steps =", steps, "| Theta(1) - tight b
 print()
 
 
-
-
-
-
-
-
 target = "Aarav"
 steps = 0
 for name in names:
@@ -39,12 +33,6 @@ print()
 
 
 
-
-
-
-
-
-
 steps = 0
 target_sum = 150
 print("Pairs with total score =", target_sum, ":")
@@ -58,17 +46,10 @@ for i in range(n):
 
 
 
-
-
-
-
-
-
-
 print(" === Asymptotic Summary ===")
 print("Theta(1) : index access - always 1 step, tight bound")
-print("Omega(1) : best case  - found in 1 step, lower bound")
-print("O(n)   :   worst case  - found after n=", n, "steps, upper bound")
+print("Omega(1) : best case    - found in 1 step, lower bound")
+print("O(n)     : worst case   - found after n=", n, "steps, upper bound")
 print("O(n^2)   : pair check   - n*(n-1)/2 =", n * (n-1) // 2, "comparisons")
 print()
 print("Drop constants, keep the dominant term. That is asymptotic analysis")
