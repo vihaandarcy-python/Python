@@ -1,4 +1,4 @@
-names = ["Aarav", "Priya", "Dev", "Meera", "Kabir"]
+names = ["Alexander", "Shaurya", "Helenski", "Murad", "Kabir"]
 scores = [90,     75,     88,     62,     95]
 n = len(scores)
 print("=== Score Trackers (n=", n, "players) ===")
@@ -12,7 +12,7 @@ print("Score at index 0 :", scores[0], "| steps =", steps, "| Theta(1) - tight b
 print()
 
 
-target = "Aarav"
+target = "Alexander"
 steps = 0
 for name in names:
     steps += 1
