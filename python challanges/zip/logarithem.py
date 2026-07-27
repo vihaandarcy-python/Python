@@ -66,5 +66,5 @@ print("Complexity ladder (n=", n, "):")
 print("O(1)     : 1 step  - constant, never frows")
 print("O(log n) :", steps, "steps - halving, grows slowly")
 print("O(n)     :", n, "steps  - linear, grows with n")
-print("O(n^2)   :", n*n, "steps - quadratic, frows fast!")
+print("O(n^2)   :", n*n, "steps - quadratic, grows fast!")
     
