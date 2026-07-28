@@ -41,4 +41,4 @@ def count_bits(n):
 
 print("Bit count: ")
 for n in [a, b, 255]:
-    print(n, "->", count_bits(n), "bits |", bits(n, count_bits(n)))
+    print(n, "->", count_bits(n), "bits |", bits(n))
