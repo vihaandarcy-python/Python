@@ -57,6 +57,6 @@ def bit_diff(a, b):
     return flips
 
 print("Bit Difference:")
-print(" diff(12, 15) =", bit_diff(12, 15), " (12=1100, 15=1111)")
-print(" diff(21, 24) =", bit_diff(21, 24), " (21=10101, 24=11000)")
-print(" diff(8, 8) =", bit_diff(8, 8), " (same -> 0)")
+print(" diff(17, 5) =", bit_diff(17, 5), " (17=10001, 5=0101)")
+print(" diff(21, 118) =", bit_diff(21, 118), " (21=10101, 118=1110110)")
+print(" diff(67, 67) =", bit_diff(67, 67), " (same -> 0)")
