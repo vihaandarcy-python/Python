@@ -20,13 +20,13 @@ print()
 # Recursive case: print n, then call with n + 1
 
 def count_up(n):
-    if n > 10:                # base case
+    if n > 14:                # base case
         return
     print(n, end=" ")
     count_up(n + 1)   #recursive call - n grows towards base case
 
-print("Counting 1 to 10 using recursion:")
-count_up(1)
+print("Counting 7 to 14 using recursion:")
+count_up(7)
 print()
 print()
 
@@ -44,7 +44,7 @@ def countdown(n):
     countdown(n - 1)   # recursive call: n shrinks toward 0
 
 print("Countdown (builds down, unwinds up):")
-countdown(5)
+countdown(39)
 print()
 
 # PART 4: LFactorial -- recursion that multiplies on the way back up
@@ -58,8 +58,8 @@ def factorial(n):
     return n * factorial(n - 1)     # recursive call: n shrinks
 
 print("Factorial using recursion:")
-print("factorial(5) =", factorial(5))
-print("factorial(4) =", factorial(4))
+print("factorial(5) =", factorial(67))
+print("factorial(4) =", factorial(6))
 print("factorial(1) =", factorial(1))
 print("factorial(0) =", factorial(0))
 print()
@@ -76,7 +76,7 @@ def NoBaseCase(n):
     print("Call", n, end=" ")
     NoBaseCase(n + 1)               # no base case -- this never stops !
 
-sys.setrecursionlimit(30)           # tiny limit for safe demonstration
+sys.setrecursionlimit(100)           # tiny limit for safe demonstration
 try:
     NoBaseCase(1)
 except RecursionError:
