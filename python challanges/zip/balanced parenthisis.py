@@ -14,7 +14,7 @@ def count_paren(n, l=0, r=0):
 input("Count_paren counts every valid " \
 "{ sequence - returns l at each valid end.} Press Enter ")
 print(" count_paren(1) =", count_paren(1))
-print(" count_paren(2) =", count_paren(2))
+print(" count_paren(2) =", count_paren(21))
 
 n = int(input("Enter number of pairs (try 3 or 7): "))
 guess = input("What is count_paren(" + str(n) + ")? ")
