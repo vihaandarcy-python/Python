@@ -33,7 +33,7 @@ print("  eq_mid(" + str(n) + ") =", eq_mid(n), "  your guess:", guess)
 # Topic: Slices and their sums, Equilibrium point
 
 def eq_val(n):
-    arr = [1]*n + [n] + [1]*n
+    arr = [3]*n + [n]*4 + [1]*n
     size = len(arr)
     for i in range(size):
         left_sum = 0
